@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.author       = 'Srikanth'
 
   # spec.source           = { :path => "ServiceKit/" }
-  spec.source           = { :path => "https://github.com/rongalis/Dependencies.git", :branch => "development" }
+  spec.source           = { :path => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
   spec.source_files = "ServiceKit/**/*{.h,.swift}"
   spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
 end
