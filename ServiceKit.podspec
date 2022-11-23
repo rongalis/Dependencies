@@ -10,7 +10,11 @@ Pod::Spec.new do |spec|
   # spec.source           = { :path => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
   spec.source_files = "ServiceKit/**/*{.h,.swift}"
   spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
-  s.resource_bundles = {
-   "ServiceKit" => ["path/to/resources/*/**"]
+  spec.framework = "ServiceKit"
+  spec.vendored_framework = 'lib/ServiceKit.xcframework'
+  spec.resource_bundles = {
+   "ServiceKit" => ["ServiceKit/**/*.{storyboard, xib, nib, xcassets}"]
 }
+spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+spec.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
 end
