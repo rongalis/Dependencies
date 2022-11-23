@@ -8,8 +8,8 @@ Pod::Spec.new do |spec|
 
   # spec.source           = { :path => "/Users/srikanth/Desktop/Github/ServiceKit/" }
   spec.source           = { :path => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
-  spec.source_files = "ServiceKit/**/*{.h,.swift}"
-  spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
+  # spec.source_files = "ServiceKit/**/*{.h,.swift}"
+  # spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
   spec.framework = "ServiceKit"
   spec.vendored_framework = 'lib/ServiceKit.xcframework'
   spec.resource_bundles = {
