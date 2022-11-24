@@ -17,6 +17,7 @@ rm -rf "${LIB}/${FRAMEWORK_NAME}.xcframework"
 build_sim(){
 	xcodebuild archive \
 	-workspace ${WORKSPACE} \
+	-configuration Release \
 	-scheme ${SCHEME} \
 	-destination="iOS Simulator" \
 	-archivePath "${IOS_SIM_ARCHIVE_PATH}" \
@@ -29,6 +30,7 @@ build_sim(){
 build_device(){
 	xcodebuild archive \
 	-workspace ${WORKSPACE} \
+	-configuration Release \
 	-scheme ${SCHEME} \
 	-destination="iOS" \
 	-archivePath "${IOS_ARCHIVE_PATH}" \
