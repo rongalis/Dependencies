@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   # spec.source_files = "ServiceKit/**/*{.h,.swift}"
   # spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
   # spec.framework = 'ServiceKit'
-  spec.vendored_frameworks = "lib/ServiceKit.xcframework"
+  spec.vendored_frameworks = "ServiceKit.xcframework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
   # spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$PROJECT_DIR"/Pods/ServiceKit/ServiceKit.framework' }
 #   spec.resource_bundles = {
