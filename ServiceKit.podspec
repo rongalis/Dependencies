@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ServiceKit'
-  spec.version          = '1.0.0.7'
+  spec.version          = '1.0.1'
   spec.license          = { :type => 'BSD' }
   spec.homepage         = 'https://github.com/'
   spec.summary          = 'To ServiceKit pods'
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   # spec.source           = { :path => "/Users/srikanth/Desktop/Github/ServiceKit/lib/ServiceKit.xcframework.zip" }
   spec.source           = { :http => "https://github.com/rongalis/ServiceKit/raw/development/lib/ServiceKit.xcframework.zip" }
-  
+
   # spec.source_files = "ServiceKit/**/*{.h,.swift}"
   # spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
   # spec.framework = 'ServiceKit'
