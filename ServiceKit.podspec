@@ -6,8 +6,10 @@ Pod::Spec.new do |spec|
   spec.summary          = 'To ServiceKit pods'
   spec.author       = 'Srikanth'
 
-  # spec.source           = { :path => "/Users/srikanth/Desktop/Github/ServiceKit/lib/ServiceKit.xcframework.zip" }
-  spec.source           = { :http => "https://github.com/rongalis/ServiceKit/raw/development/lib/ServiceKit.xcframework.zip" }
+   spec.source           = { :path => "/Users/srikanth/Desktop/Github/ServiceKit/lib/ServiceKit.xcframework.zip" }
+  # spec.source           = { :http => "https://github.com/rongalis/ServiceKit/raw/development/lib/ServiceKit.xcframework.zip" }
+  # spec.source           = { :http => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
+  
 
   # spec.source_files = "ServiceKit/**/*{.h,.swift}"
   # spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
