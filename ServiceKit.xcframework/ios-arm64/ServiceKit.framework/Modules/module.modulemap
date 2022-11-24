@@ -1,0 +1,11 @@
+framework module ServiceKit {
+  umbrella header "ServiceKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ServiceKit.Swift {
+    header "ServiceKit-Swift.h"
+    requires objc
+}
