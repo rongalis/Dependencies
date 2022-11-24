@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ServiceKit'
-  spec.version          = '1.0.1'
+  spec.version          = '1.0.2'
   spec.license          = { :type => 'BSD' }
   spec.homepage         = 'https://github.com/'
   spec.summary          = 'To ServiceKit pods'
