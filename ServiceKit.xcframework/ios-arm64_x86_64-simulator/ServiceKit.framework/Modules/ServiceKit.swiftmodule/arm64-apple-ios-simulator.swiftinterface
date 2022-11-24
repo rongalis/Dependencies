@@ -4,6 +4,7 @@
 import Foundation
 @_exported import ServiceKit
 import Swift
+import UIKit
 import _Concurrency
 public enum HttpMethod : Swift.String {
   case GET
@@ -19,6 +20,13 @@ public enum HttpMethod : Swift.String {
   public func makeAPIcall(withUrl url: Swift.String?, method: ServiceKit.HttpMethod?, body: [Swift.String : Any]?, completion: @escaping (_ results: Foundation.Data) -> Swift.Void)
   public func getImageData(from url: Foundation.URL, completion: @escaping (Foundation.Data?, Foundation.URLResponse?, Swift.Error?) -> ())
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FirstViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public func callThisFunction()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension ServiceKit.HttpMethod : Swift.Equatable {}
