@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   
 
   # spec.source_files = "ServiceKit/**/*{.h,.swift}"
-  spec.exclude_files =  '"$PROJECT_DIR"/Pods/ServiceKit/Resources/*.{storyboard, xib, nib}'
+  spec.exclude_files =  '"$PROJECT_DIR"/Pods/ServiceKit/Helpers/Boards/*.{storyboard, xib, nib}'
   # spec.framework = 'ServiceKit'
   spec.vendored_frameworks = "ServiceKit.xcframework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
