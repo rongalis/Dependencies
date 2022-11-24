@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
    spec.source           = { :http => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
   
 
-  # spec.source_files = "ServiceKit/**/*{.h,.swift}"
+  spec.source_files = "ServiceKit/**/*{.h,.swift}"
   # spec.exclude_files =  "ServiceKit/ServiceKit.podspec"
   # spec.framework = 'ServiceKit'
   spec.vendored_frameworks = "ServiceKit.xcframework"
