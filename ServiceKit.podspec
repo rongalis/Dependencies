@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   
 
   # spec.source_files = "ServiceKit/**/*{.h,.swift}"
-  spec.exclude_files =  '"$PROJECT_DIR"/Pods/ServiceKit/ServiceKit/Helpers/Boards/*.{storyboard, xib, nib}'
+  spec.exclude_files =  '"$PROJECT_DIR"/Pods/ServiceKit/Resources'
   # spec.framework = 'ServiceKit'
   spec.vendored_frameworks = "ServiceKit.xcframework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.resource_bundles = {
    "ServiceKit" => 'ServiceKit/**/*.{storyboard, xib, nib, xcassets}'
   }
+
 
 spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
 spec.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
