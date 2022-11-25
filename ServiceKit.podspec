@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ServiceKit'
-  spec.version          = '1.1.2'
+  spec.version          = '1.1.3'
   spec.license          = { :type => 'BSD' }
   spec.homepage         = 'https://github.com/'
   spec.summary          = 'To ServiceKit pods'
@@ -18,9 +18,9 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "ServiceKit.xcframework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
   # spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$PROJECT_DIR"/Pods/ServiceKit/ServiceKit.framework' }
-  spec.resource_bundles = {
-   "ServiceKit" => 'ServiceKit/**/*.storyboard'
-  }
+  # spec.resource_bundles = {
+  #  "ServiceKit" => 'ServiceKit/**/*.storyboard'
+  # }
 
 
 spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
