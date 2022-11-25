@@ -12,6 +12,7 @@
 		F3AD4E2B28D9110100535D3D /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD4E2A28D9110100535D3D /* ServiceHandler.swift */; };
 		F3CEEC56292F4F9100CEC9C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */; };
 		F3CEEC5E2931339600CEC9C5 /* NibFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC5C2931339600CEC9C5 /* NibFile.xib */; };
+		F3CEEC60293158C600CEC9C5 /* ServiceBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC5D2931339600CEC9C5 /* ServiceBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,7 +116,6 @@
 				F3AD4E1B28D910EB00535D3D /* Headers */,
 				F3AD4E1C28D910EB00535D3D /* Sources */,
 				F3AD4E1D28D910EB00535D3D /* Frameworks */,
-				F3CEEC5B2931328D00CEC9C5 /* ShellScript */,
 				F3AD4E1E28D910EB00535D3D /* Resources */,
 			);
 			buildRules = (
@@ -165,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CEEC60293158C600CEC9C5 /* ServiceBoard.storyboard in Resources */,
 				F3CEEC5E2931339600CEC9C5 /* NibFile.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,23 +194,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		F3CEEC5B2931328D00CEC9C5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp \"$SRCROOT\"/ServiceKit/Helpers/ServiceBoard.storyboard ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
