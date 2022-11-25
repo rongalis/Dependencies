@@ -12,7 +12,6 @@
 		F3AD4E2B28D9110100535D3D /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD4E2A28D9110100535D3D /* ServiceHandler.swift */; };
 		F3CEEC56292F4F9100CEC9C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */; };
 		F3CEEC5E2931339600CEC9C5 /* NibFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC5C2931339600CEC9C5 /* NibFile.xib */; };
-		F3CEEC5F2931339600CEC9C5 /* ServiceBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC5D2931339600CEC9C5 /* ServiceBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -167,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3CEEC5E2931339600CEC9C5 /* NibFile.xib in Resources */,
-				F3CEEC5F2931339600CEC9C5 /* ServiceBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp \"$SRCROOT\"/ServiceKit/Helpers/ServiceBoard.storyboard ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.bundle\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp \"$SRCROOT\"/ServiceKit/Helpers/ServiceBoard.storyboard ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

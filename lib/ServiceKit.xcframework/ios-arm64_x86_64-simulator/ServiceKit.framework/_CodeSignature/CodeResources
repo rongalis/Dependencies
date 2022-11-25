@@ -48,17 +48,9 @@
 		<data>
 		oOEBGkTfaijwXjniJcHPQciZCzo=
 		</data>
-		<key>ServiceBoard.storyboardc/FirstViewController.nib</key>
+		<key>ServiceBoard.storyboard</key>
 		<data>
-		wXKHR+iv2CmGnkd16L/6RsxOzuE=
-		</data>
-		<key>ServiceBoard.storyboardc/Info.plist</key>
-		<data>
-		D0ChuP8t6QSLyR60NkgKuVkgDDM=
-		</data>
-		<key>ServiceBoard.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
-		<data>
-		Rc8azX8NVsaE7CGrMtzkd4YtTv0=
+		KFxrS/K5lABv4A9eM6ft6RVTayI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -133,25 +125,11 @@
 			h5qEI6N9d8cXAbXSM6TNyYji1yhwdmeP02A6ql+th78=
 			</data>
 		</dict>
-		<key>ServiceBoard.storyboardc/FirstViewController.nib</key>
+		<key>ServiceBoard.storyboard</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fx9TTk34ZzO4xip2TehGczxxrsuX3SAHN9pdrPed7IU=
-			</data>
-		</dict>
-		<key>ServiceBoard.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M0fNh2XpRk+25fR3K2Zn8yDFjPTeH6PhGgDCoC4mfRw=
-			</data>
-		</dict>
-		<key>ServiceBoard.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DAcMX+EgFsngCCGn4jnRPc+2bCVqroP1i52mcxG+nng=
+			43fDRSoHknVjxZUBgkv8dPXTJL/4NRgZisx3QDjK5+8=
 			</data>
 		</dict>
 	</dict>
