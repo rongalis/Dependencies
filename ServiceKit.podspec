@@ -18,9 +18,9 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "ServiceKit.xcframework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
   # spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$PROJECT_DIR"/Pods/ServiceKit/ServiceKit.framework' }
-  # spec.resource_bundles = {
-  #  "ServiceKit" => 'ServiceKit/**/*.{bundle}'
-  # }
+  spec.resource_bundles = {
+   "ServiceKit" => 'ServiceKit/**/*.storyboard'
+  }
 
 
 spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
