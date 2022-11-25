@@ -11,7 +11,8 @@
 		F3AD4E2428D910EB00535D3D /* ServiceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AD4E2328D910EB00535D3D /* ServiceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3AD4E2B28D9110100535D3D /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD4E2A28D9110100535D3D /* ServiceHandler.swift */; };
 		F3CEEC56292F4F9100CEC9C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */; };
-		F3CEEC5A2930963C00CEC9C5 /* ServiceKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC592930963C00CEC9C5 /* ServiceKit.bundle */; };
+		F3CEEC5E2931339600CEC9C5 /* NibFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC5C2931339600CEC9C5 /* NibFile.xib */; };
+		F3CEEC5F2931339600CEC9C5 /* ServiceBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC5D2931339600CEC9C5 /* ServiceBoard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		F3AD4E2328D910EB00535D3D /* ServiceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceKit.h; sourceTree = "<group>"; };
 		F3AD4E2A28D9110100535D3D /* ServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
 		F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F3CEEC592930963C00CEC9C5 /* ServiceKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ServiceKit.bundle; sourceTree = "<group>"; };
+		F3CEEC5C2931339600CEC9C5 /* NibFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibFile.xib; sourceTree = "<group>"; };
+		F3CEEC5D2931339600CEC9C5 /* ServiceBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceBoard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,8 @@
 		F3CEEC51292F4F9100CEC9C5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F3CEEC592930963C00CEC9C5 /* ServiceKit.bundle */,
+				F3CEEC5C2931339600CEC9C5 /* NibFile.xib */,
+				F3CEEC5D2931339600CEC9C5 /* ServiceBoard.storyboard */,
 				F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */,
 			);
 			path = Helpers;
@@ -113,6 +116,7 @@
 				F3AD4E1B28D910EB00535D3D /* Headers */,
 				F3AD4E1C28D910EB00535D3D /* Sources */,
 				F3AD4E1D28D910EB00535D3D /* Frameworks */,
+				F3CEEC5B2931328D00CEC9C5 /* ShellScript */,
 				F3AD4E1E28D910EB00535D3D /* Resources */,
 			);
 			buildRules = (
@@ -162,7 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CEEC5A2930963C00CEC9C5 /* ServiceKit.bundle in Resources */,
+				F3CEEC5E2931339600CEC9C5 /* NibFile.xib in Resources */,
+				F3CEEC5F2931339600CEC9C5 /* ServiceBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +193,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\ncp \n";
 			showEnvVarsInLog = 0;
+		};
+		F3CEEC5B2931328D00CEC9C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp /ServiceKit/Helpers/*.storyboard ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
