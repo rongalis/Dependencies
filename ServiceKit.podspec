@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
    spec.source           = { :http => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
   
 
-  spec.source_files = 'ServiceKit/**/*.{bundle}'
+  spec.source_files = 'ServiceKit/**/*.bundle'
 
   # spec.exclude_files =  '"$PROJECT_DIR"/Pods/ServiceKit/Resources/*.storyboard'
   # spec.framework = 'ServiceKit'
