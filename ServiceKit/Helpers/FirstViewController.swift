@@ -17,8 +17,11 @@ public class FirstViewController: UIViewController{
 public func callThisFunction(){
         print("Print this - callThisFunction")
     
-    let frameworkBundle = Bundle(identifier: "com.rongali.myapp.ServiceKit")
-    let storyboard = UIStoryboard(name: "Storyboard", bundle: frameworkBundle)
-    print("Changes test - \(storyboard)")
+            let filePath = Bundle.main.url(forResource: "ServiceHandler", withExtension: "swift")
+            print("File path - \(filePath?.absoluteString ?? "")")
+    
+//    let frameworkBundle = Bundle(identifier: "com.rongali.myapp.ServiceKit")
+//    let storyboard = UIStoryboard(name: "Storyboard", bundle: frameworkBundle)
+//    print("Changes test - \(storyboard)")
     }
 }
