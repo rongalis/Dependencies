@@ -11,8 +11,7 @@
 		F3AD4E2428D910EB00535D3D /* ServiceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AD4E2328D910EB00535D3D /* ServiceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3AD4E2B28D9110100535D3D /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD4E2A28D9110100535D3D /* ServiceHandler.swift */; };
 		F3CEEC56292F4F9100CEC9C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */; };
-		F3CEEC57292F4F9100CEC9C5 /* ServiceBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC54292F4F9100CEC9C5 /* ServiceBoard.storyboard */; };
-		F3CEEC58292F4F9100CEC9C5 /* NibFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC55292F4F9100CEC9C5 /* NibFile.xib */; };
+		F3CEEC5A2930963C00CEC9C5 /* ServiceKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3CEEC592930963C00CEC9C5 /* ServiceKit.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +22,7 @@
 		F3AD4E2328D910EB00535D3D /* ServiceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceKit.h; sourceTree = "<group>"; };
 		F3AD4E2A28D9110100535D3D /* ServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
 		F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F3CEEC54292F4F9100CEC9C5 /* ServiceBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceBoard.storyboard; sourceTree = "<group>"; };
-		F3CEEC55292F4F9100CEC9C5 /* NibFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibFile.xib; sourceTree = "<group>"; };
+		F3CEEC592930963C00CEC9C5 /* ServiceKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ServiceKit.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,19 +85,10 @@
 		F3CEEC51292F4F9100CEC9C5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F3CEEC592930963C00CEC9C5 /* ServiceKit.bundle */,
 				F3CEEC52292F4F9100CEC9C5 /* FirstViewController.swift */,
-				F3CEEC53292F4F9100CEC9C5 /* Boards */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		F3CEEC53292F4F9100CEC9C5 /* Boards */ = {
-			isa = PBXGroup;
-			children = (
-				F3CEEC54292F4F9100CEC9C5 /* ServiceBoard.storyboard */,
-				F3CEEC55292F4F9100CEC9C5 /* NibFile.xib */,
-			);
-			path = Boards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CEEC57292F4F9100CEC9C5 /* ServiceBoard.storyboard in Resources */,
-				F3CEEC58292F4F9100CEC9C5 /* NibFile.xib in Resources */,
+				F3CEEC5A2930963C00CEC9C5 /* ServiceKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
