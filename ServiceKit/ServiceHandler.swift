@@ -25,16 +25,7 @@ public class ServiceHandler: NSObject {
     ///   - completion: Callback method after fetching response data
     public func makeAPIcall(withUrl url: String?, method: HttpMethod?, body: [String:Any]?, completion: @escaping (_ results: Data) -> Void){
        /// Make api call asynchronously on background thread
-        ///
-        ///
-        ///
-      print("Came here ")
-//        let filePath = Bundle.main.url(forResource: "ServiceHandler", withExtension: "swift")
-//        print("File path - \(filePath?.absoluteString ?? "")")
-//
 
-        
-    
         DispatchQueue.global().async {
             guard let url = url, let url = URL(string: url) else {
                 /// display alert, invalid url
