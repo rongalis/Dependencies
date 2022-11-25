@@ -211,7 +211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp \"$SRCROOT\"/ServiceKit/Helpers/ServiceBoard.storyboard ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp \"$SRCROOT\"/ServiceKit/Helpers/ServiceBoard.storyboard ${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.bundle\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
