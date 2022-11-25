@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ServiceKit'
-  spec.version          = '1.1.1'
+  spec.version          = '1.1.2'
   spec.license          = { :type => 'BSD' }
   spec.homepage         = 'https://github.com/'
   spec.summary          = 'To ServiceKit pods'
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
    spec.source           = { :http => "https://github.com/rongalis/ServiceKit.git", :branch => "development" }
   
 
-  spec.source_files = 'ServiceKit/**/*.bundle'
+  # spec.source_files = 'ServiceKit/**/*.bundle'
 
   # spec.exclude_files =  '"$PROJECT_DIR"/Pods/ServiceKit/Resources/*.storyboard'
   # spec.framework = 'ServiceKit'
