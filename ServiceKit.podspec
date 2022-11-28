@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 
   spec.exclude_files =  'ServiceKit/**/*.storyboard'
   # spec.framework = 'ServiceKit'
-  spec.vendored_frameworks = "ServiceKit.framework"
+  spec.vendored_frameworks = "lib/ServiceKit.framework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
   # spec.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$PROJECT_DIR"/Pods/ServiceKit/ServiceKit.framework' }
   spec.resource_bundles = {
