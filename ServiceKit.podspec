@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
 
   # spec.source_files = 'ServiceKit/**/*.bundle'
 
-  spec.exclude_files =  'ServiceKit/**/*.storyboard'
+  # spec.exclude_files =  'ServiceKit/**/*.storyboard'
   # spec.framework = 'ServiceKit'
   spec.vendored_frameworks = "lib/ServiceKit.framework"
   # spec.preserve_paths = 'ServiceKit/ServiceKit.framework'
